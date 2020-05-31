@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap');
+@font-face {
+    font-family: Amatic SC;
+    src: url(fonts/AmaticSC-Bold.ttf);
+   }
+*,*:before,*:after
+{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+.header{
+  z-index: 4;
+  display:flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  border: solid;
+  border-color:#988396;
+}
+.logo{
+  font-family: 'Gochi Hand', cursive;
+  font-size: 5vh;
+  color: #ee5b86;
+  text-shadow: #000 0 0 2px;
+}
+.menu{
+width: 60%;
+}
+.menu ul{
+display: flex;
+justify-content: space-around;
+list-style: none;
+}
+.menu-link{
+font-family: 'Amatic SC', cursive;
+  color: #ee5b86;
+  text-shadow: #000 0 0 2px;
+  text-decoration: none;
+}
+.menu-sho-d{
+  border: 3px solid white;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-size: 2vh;
+  color:white;
+  display: none;
+
+}
+.menu-sho-l{
+  border: 3px solid white;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-size: 2vh;
+  color:#fff;
+}
+
+.main{
+  z-index: 0;
+
+  height: 100vh;
+  min-height: 500px;
+  align-items: center;
+  background: url("../img/fota.jpg");
+  background-size:cover;
+
+  position: relative;
+}
+.main-overlay{
+  position: absolute;
+  left: 0,top:0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+position: absolute;
+}
+.main-hto-ya{
+
+position: absolute;
+  border :2px solid red;
+  color:#fff;
+
+}
+.content1{
+  z-index: 0;
+  height: 100vh;
+  min-height: 600px;
+  width: 100%;
+vertical-align: middle;
+  background: url("../img/fota.jpg");
+  background-size:cover;
+  position: relative;
+
+}
+.content1-overlay{
+  position: absolute;
+  left: 0,top:0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content1-overlay table {
+
+
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 20px;
+  max-width: 100%;
+
+  border-collapse: collapse;
+  text-align: left;
+
+
+}
+.content1-overlay th {
+  font-weight: normal;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  padding: 10px 8px;
+}
+.content1-overlay td {
+  color: #fff;
+  padding: 9px 8px;
+  transition: .3s linear;
+
+
+}
+tr:hover td {color: #fff;}
+
+.content2{
+  z-index: 0;
+  height: 100vh;
+  min-height: 600px;
+  width: 100%;
+vertical-align: middle;
+  background: url("../img/fota.jpg");
+  background-size:cover;
+  position: relative;
+}
+.content2-overlay{
+  position: absolute;
+  left: 0,top:0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content3{
+  z-index: 0;
+  height: 100vh;
+  min-height: 600px;
+  width: 100%;
+vertical-align: middle;
+  background: url("../img/fota.jpg");
+  background-size:cover;
+  position: relative;
+}
+.content3-overlay{
+  position: absolute;
+  left: 0,top:0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content3-overlay video{
+  z-index: 5;
+}
+.reg {
+       border-radius: 5px;
+       background: rgba(0, 0, 0, 0.5);
+       padding: 20px;
+       color:#fff;
+}
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+
+    bottom: 0;
+    width: 100%;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+.downdrop{
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  top:73%;
+
+
+  border: 2px solid white;
+}
+.sho-l ul {
+  display:none;
+}
+.sho-l:hover ul {
+  display:block;
+}
+.sho-l ul li:hover{
+  background-color: #333;
+}
+.sho-d ul {
+  display:none;
+}
+.sho-d:hover ul {
+  display:block;
+}
+.sho-d ul li:hover{
+  background-color: #333;
+}
+.ogo{
+text-decoration: none;
+  font-size: 3vh;
+  color: #fff;
+}
+
+.menu-sho-d:hover {
+  background-color:black;
+}
+.menu-sho-l:hover {
+  background-color: #333;
+}
+.topsecret{
+    color: #fff;
+    font-size: 4em;
+    display: none
+}
+}
+@media (min-width:320px) and (max-width:600px) {
+.logo{
+  font-size: 6vh;
+}
+.menu{
+  justify-content:center;
+  align-items: center;
+  font-size: 4vh;
+}
+
+.menu ul{
+flex-direction: column;
+}
+
+.header{
+  flex-direction: column;
+}
+.content1-overlay table{
+font-size: 10px;
+
+}
+}

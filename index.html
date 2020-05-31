@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+<script src ="js/script1.js"></script>
+</head>
+<body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+
+    <div class="header">
+
+      <div class="logo">
+
+        <a href="#main" class="menu-link">Полуничка:)</a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li class="sho-d">
+            <a href="#" class="menu-sho-d">Світла</a>
+
+              <ul class="downdrop">
+                <li><a href="#" class="ogo">Ого</a> </li>
+                <li><a href="#" class="ogo">Маєш</a></li>
+                <li><a href="#" class="ogo">Класну</a></li>
+                <li><a href="#" class="ogo">Мишку</a></li>
+              </ul>
+
+          </li>
+          <li><a href="#content11" class="menu-link">Пропонуємо</a></li>
+          <li><a href="#content2" class="menu-link">Регістрація</a></li>
+          <li><a href="#content3" class="menu-link">Відосік☺</a></li>
+          <li class="sho-l">
+            <a href="#" class="menu-sho-l">Чорна</a>
+
+              <ul class="downdrop">
+                <li><a href="#" class="ogo">Ого</a> </li>
+                <li><a href="#" class="ogo">Маєш</a></li>
+                <li><a href="#" class="ogo">Класну</a></li>
+                <li><a href="#" class="ogo">Мишку</a></li>
+              </ul>
+
+          </li>
+        </ul>
+      </div>
+  </div>
+
+
+
+    <div id="contentl" class="content1">
+    <div class="main-overlay">
+      <div class="main-hto-ya">
+         <h1>ХТО МИ?</h1>
+           <h1 id="t2">ХТО...</h1>
+    </div>
+  </div>
+  </div>
+  <div id = "content11" class="content1">
+
+  <div class="content1-overlay">
+    <table>
+<tr><th>Робота</th><th>Оплата</th><th>Обов'язки</th><th>Оцінка праці</th></tr>
+<tr><td>Полуницеукладчик</td><td>$300</td><td>Вкладання полуниць</td><td>(‘～` )</td></tr>
+<tr><td>Розполуничувач</td><td>$150</td><td>Відполуничування полуниць</td><td>(੭ˊ꒳​ˋ)੭</td></tr>
+<tr><td>Полуниця</td><td>$2000</td><td>Бути полуницею</td><td>( ͡° ͜ʖ ͡°)</td></tr>
+<tr><td>Василь</td><td>Василь</td><td>Бути Василем</td><td>Вася</td></tr>
+</table>
+</div>
+</div>
+
+
+
+
+
+
+<div id = "content2" class="content2">
+<div class="content2-overlay">
+
+
+    <div class="reg">
+      <form id="form">
+              <label for="fname">Ти хто?</label>
+              <input type="text" id="fname" name="firstname" placeholder="Хто я...">
+
+              <p><b>Группа крові</b></p>
+                 <p><input name="blood" type="radio" for="I" value="one"> I</p>
+                 <p><input name="blood" type="radio" for="II" value="two"> II</p>
+                 <p><input name="blood" type="radio" for="III" value="three" > III</p>
+                 <p><input name="blood" type="radio" for="IV" value="four" > IV</p>
+                 <p><input name="blood" type="radio" for="na-rukave" value="na-rukave" checked> На рукаве</p>
+
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="ua-1">Ukraine)</option>
+                <option value="ua-2">Ukraine))</option>
+                <option value="ua-3">Ukraine)))</option>
+              </select>
+
+              <label for="subject">Не пиши сюда</label>
+              <textarea id="subject" name="nepishi" placeholder="Кому кажу:(" style="height:200px"></textarea>
+
+              <input type="button" onclick="valid(document.getElementById('form'))" value="НУМО!">
+
+      </form>
+    </div>
+
+</div>
+</div>
+
+<div id = "content3" class="content3">
+<div class="content3-overlay">
+  <iframe width="1280" height="720" src="https://www.youtube.com/embed/a5TEO6KG1YA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="navbar">
+  <a class ="topsecret0">© 2020 • Klyblichka.pl.COM</a>
+  <div  class='topsecret'>
+  НАШО ТОБІ ТО?</div>
+<a >На полуничному сайті зберігається інформація ,що не призначена для лиць менше 1.5 років.Всі права на полуничний текст і полуничні зоображення належать їх авторам.</a>
+</div>
+
+
+<script>
+//Перший скрипт
+function modifyText(new_text) {
+  var t2 = document.getElementById("t2");
+  t2.firstChild.nodeValue = new_text;
+}
+el = document.getElementById('t2');
+el.addEventListener("click", function(){modifyText("ТОЙВО")}, false);
+
+function polunitsi() {
+  alert('ПОЛУНИЦІ')
+
+}
+//Другий і третій скрипт
+var firstElement = document.querySelector('.topsecret0')
+var secondElement = document.querySelector('.topsecret')
+
+firstElement.addEventListener('mouseover', function () {
+  secondElement.style.display = 'block';
+})
+
+firstElement.addEventListener('mouseout', function () {
+  secondElement.style.display = 'none';
+})
+//Світла і темна тема
+var light = document.querySelector(".menu-sho-l");
+var dark = document.querySelector(".menu-sho-d");
+var c1 = document.querySelector(".header");
+var navbar = document.querySelector(".navbar");
+var ya = document.querySelector(".main-overlay");
+var ya1 = document.querySelector(".content1-overlay");
+var ya2 = document.querySelector(".content2-overlay");
+var ya3 = document.querySelector(".content3-overlay");
+light.addEventListener("click", function () {
+  light.style.display = 'none';
+ dark.style.display = 'block';
+ c1.style.background = 'rgba(0, 0, 0, 1)';
+navbar.style.background = 'rgba(0, 0, 0, 1)';
+ya.style.background = 'rgba(0, 0, 0, 0.75)';
+ya1.style.background = 'rgba(0, 0, 0, 0.75)';
+ya2.style.background = 'rgba(0, 0, 0, 0.75)';
+ya3.style.background = 'rgba(0, 0, 0, 0.75)';
+})
+dark.addEventListener('click', function () {
+  dark.style.display = 'none';
+  light.style.display = 'block';
+c1.style.background = 'rgba(0, 0, 0, 0.5)';
+navbar.style.background = 'rgba(0, 0, 0, 0.75)';
+ya.style.background = 'rgba(0, 0, 0, 0)';
+ya1.style.background = 'rgba(0, 0, 0, 0)';
+ya2.style.background = 'rgba(0, 0, 0, 0)';
+ya3.style.background = 'rgba(0, 0, 0, 0)';
+})
+
+</script>
+</body>
+</html>
